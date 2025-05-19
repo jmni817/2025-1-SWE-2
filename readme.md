@@ -72,3 +72,36 @@ System
 input()
 closeRequest()
 systemClose()
+
+
+
+
+
+
+
+스테레오타입별 클래스 정리
+
+<boundary>
+AddAccountUI
+LoginUI
+LogoutUI
+AddBikeUI
+RentUI
+RentRecordUI
+CloseUI
+
+<control>
+AddAccount
+Login
+Logout
+AddBike
+Rent
+RentRecord
+Close
+
+<entity>
+Account
+Bike
+RentList
+Session
+System (종료를 위한 상징적 역할)
