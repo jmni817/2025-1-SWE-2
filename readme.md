@@ -69,7 +69,7 @@
 - `input()`: 바운더리  
 - `requestRent()`: 컨트롤  
 - `getCurrentUser()`: 엔티티  
-- `addRecord()`: 자전거아이디저장 / 엔티티  
+- `addRecord()`: 자전거객체저장 / 엔티티  
 
 ---
 
