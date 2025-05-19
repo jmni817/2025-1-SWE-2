@@ -7,12 +7,12 @@
 - `AddAccountUI`  
 - `AddAccount`  
 - `Account`  
-- `newAcc: Account` (※ 객체, 클래스 다이어그램에는 포함하지 않음)
+- `newAcc: Account` 
 
 **Methods**  
-- `input()`  
-- `addNewAccount()`  
-- `Account()`  
+- `input()`: 바운더리  
+- `addNewAccount()`: 컨트롤  
+- `Account()`: 아이디,비번,전번저장 / 엔티티    
 
 ---
 
@@ -24,10 +24,10 @@
 - `Session`  
 
 **Methods**  
-- `input()`  
-- `loginRequest()`  
-- `verifyAccount()`  
-- `saveCurrentUser()`  
+- `input()`: 바운더리  
+- `loginRequest()`: 컨트롤   
+- `verifyAccount()`: 엔티티   
+- `saveCurrentUser()`: 현재유저아이디저장 / 엔티티  
 
 ---
 
@@ -38,9 +38,9 @@
 - `Session`  
 
 **Methods**  
-- `input()`  
-- `logoutRequest()`  
-- `clearSession()`  
+- `input()`: 바운더리  
+- `logoutRequest()`: 컨트롤  
+- `clearSession()`: 엔티티  
 
 ---
 
@@ -49,12 +49,12 @@
 - `AddBikeUI`  
 - `AddBike`  
 - `Bike`  
-- `newBike: Bike` (※ 객체, 클래스 다이어그램에는 포함하지 않음)
+- `newBike: Bike`    
 
 **Methods**  
-- `input()`  
-- `addNewBike()`  
-- `Bike()`  
+- `input()`: 바운더리  
+- `addNewBike()`: 컨트롤  
+- `Bike()`: 자전거아이디,자전거제품명저장 / 엔티티  
 
 ---
 
@@ -66,10 +66,10 @@
 - `RentList`  
 
 **Methods**  
-- `input()`  
-- `requestRent()`  
-- `getCurrentUser()`  
-- `addRecord()`  
+- `input()`: 바운더리  
+- `requestRent()`: 컨트롤  
+- `getCurrentUser()`: 엔티티  
+- `addRecord()`: 자전거아이디저장 / 엔티티  
 
 ---
 
@@ -82,11 +82,11 @@
 - `Bike`  
 
 **Methods**  
-- `input()`  
-- `requestRentList()`  
-- `getCurrentUser()`  
-- `getRentRecord()`  
-- `getBikeDetails()` (for all bikes in rent list)
+- `input()`: 바운더리  
+- `requestRentList()`: 컨트롤  
+- `getCurrentUser()`: 엔티티  
+- `getRentRecord()`: 엔티티  
+- `getBikeDetails()`: 엔티티 
 
 ---
 
@@ -97,9 +97,9 @@
 - `System`  
 
 **Methods**  
-- `input()`  
-- `closeRequest()`  
-- `systemClose()`  
+- `input()`: 바운더리  
+- `closeRequest()`: 컨트롤  
+- `systemClose()`: 컨트롤  
 
 ---
 
