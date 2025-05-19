@@ -80,7 +80,8 @@ System
   
   
 # 스테레오타입별 클래스 정리
-  
+  *newAcc:Account 같은 건 단지 "생성된 객체"일 뿐 클래스 다이어그램에는 안 들어감*
+
 [boundary]  
 AddAccountUI  
 LoginUI  
