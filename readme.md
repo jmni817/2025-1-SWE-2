@@ -101,7 +101,13 @@ Close
 
 <entity>
 Account
+-   회원의 정보를 담는 엔티티 클래스
+    회원가입, 로그인에서 생성 및 검증됨
 Bike
+-   등록된 자전거의 ID 및 제품명
 RentList
+-   특정 회원의 대여 기록을 보관
+    1인 1RentList
 Session
+-   현재 로그인된 회원 정보를 유지
 System (종료를 위한 상징적 역할)
