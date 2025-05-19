@@ -107,7 +107,7 @@
 
 > `newAcc: Account` 등은 단순 객체이므로 클래스 다이어그램에는 포함하지 않음.
 
-### 📘 Boundary
+###  Boundary
 - `AddAccountUI`  
 - `LoginUI`  
 - `LogoutUI`  
@@ -116,7 +116,7 @@
 - `RentRecordUI`  
 - `CloseUI`
 
-### ⚙️ Control
+###  Control
 - `AddAccount`  
 - `Login`  
 - `Logout`  
@@ -124,8 +124,9 @@
 - `Rent`  
 - `RentRecord`  
 - `Close`
-
-### 🧾 Entity
+- `System`  
+  
+###  Entity
 - `Account`  
   - 회원 정보를 담는 엔티티  
   - 회원가입 및 로그인 시 사용됨  
@@ -135,7 +136,5 @@
   - 회원별 대여 기록을 보관 (1인 1RentList)  
 - `Session`  
   - 현재 로그인된 회원 정보 유지  
-- `System`  
-  - 시스템 종료를 위한 상징적 역할  
-
+  
 ---
