@@ -26,8 +26,7 @@ Session
 -------------
 input()
 logoutRequest()
-removeCurrentUser()
-closeSession()
+clearSession()
 
 [자전거_등록]
 AddBikeUI
@@ -40,23 +39,21 @@ addNewBike()
 Bike()
 
 [자전거_대여]
-NewRentUI
-NewRent
-Session
+RentUI
 Rent
-newRent:Rent
+Session
+RentList
 -------------
 input()
 requestRent()
 getCurrentUser()
-Rent()
 addRecord()
 
 
 [자전거_대여_내역_조회]
-RentListUI
+RentRecordUI
+RentRecord
 RentList
-Rent
 Session
 Bike
 -------------
@@ -64,7 +61,7 @@ input()
 requestRentList()
 getCurrentUser()
 getRentRecord()
-*[For all rent's bikes]: getBikeDetails()
+*[For all bikes in rentlist]: getBikeDetails()
 
 
 [종료]
