@@ -1,10 +1,12 @@
-#include <string>
 #include "LoginUI.h"
-#include "Login.h"
 
-void LoginUI::input(ifstream& fin, ofstream& fout, Login& control) {
-    string id, pw;
-    fin >> id >> pw;
-    control.loginRequest(id, pw);   //호출
-    fout << "2.1 로그인 \n> " << id << " "<< pw << endl;
+LoginUI::LoginUI(Login* control) {
+    this->loginControl = control;
+}
+
+void LoginUI::input(const string& userID, const string& password, ofstream& fout) {
+    if (loginControl->loginRequest(userID, password)) {
+        fout << "2.1. 로그인" << endl;
+        fout << "> " << userID << " " << password << endl;
+    }
 }

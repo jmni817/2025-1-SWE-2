@@ -17,3 +17,7 @@ string Account::getPw() const {
 string Account::getPhone() const {
     return phoneNumber;
 }
+
+bool Account::verifyAccount(string& id, string& pw) {
+    return (userID == id && password == pw);
+}

@@ -1,11 +1,16 @@
-#include <string>
 #include "Account.h"
-using namespace std
+#include "Session.h"
+#include <vector>
+#include <string>
+using namespace std;
 
 class Login {
 private:
-    AccountList* accountList;
+    vector<Account>* accounts;
+    Session* session;
+
 public:
-    Login(AccountList* list);
-    void loginRequest(const string& id, const string& pw);
+    Login(vector<Account>* accounts, Session* session);
+
+    bool loginRequest(string& userID, string& password);
 };

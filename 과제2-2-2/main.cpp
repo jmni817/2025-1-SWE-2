@@ -19,11 +19,10 @@ using namespace std;
 ifstream in_fp;
 ofstream out_fp;
 // 전역 객체
-Account accountManager;          // 회원 정보 관리
-Session sessionManager;          // 현재 로그인 상태 관리
-Logout logout(&sessionManager);
-LogoutUI logoutUI(&logout);
-CloseUI closeUI(&close);
+vector<Account> accounts;  // 회원목록
+Session session;           // 로그인 세션
+Login login(&accounts, &session);
+LoginUI loginUI(&login);
 
 
 void doTask();
@@ -47,8 +46,8 @@ void doTask(ifstream& in_fp, ofstream& out_fp, vector<Account>& accounts) {
     bool is_program_exit = false;
 
     // Control 클래스 객체
-    AddAccount addAccount(&accountManager);
-    Login login(&accountManager, &sessionManager);
+    AddAccount addAccount(&accounts);
+    Login login(&accounts, &session);
 
     // UI 클래스 객체
     AddAccountUI addAccountUI(&addAccount);

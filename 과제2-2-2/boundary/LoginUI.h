@@ -1,9 +1,14 @@
+#include "Login.h"
 #include <fstream>
+#include <string>
 using namespace std;
 
-class Login;
-
 class LoginUI {
+private:
+    Login* loginControl;
+
 public:
-    void input(ifstream& fin, ofstream& fout, Login& control);
+    LoginUI(Login* control);
+
+    void input(const string& userID, const string& password, ofstream& fout);
 };
