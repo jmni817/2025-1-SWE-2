@@ -12,4 +12,5 @@ void AddBikeUI::input(const string& bikeID, const string& bikeName, ofstream& fo
 
     fout << "3.1. 자전거 등록" << endl;
     fout << "> " << newBike.getBikeID() << " " << newBike.getBikeName() << endl;
+    fout << endl;
 }

@@ -3,6 +3,7 @@
 #include <vector>
 #include "Bike.h"
 #include "Session.h"
+#include "RentList.h"
 
 class RentRecord {
 private:

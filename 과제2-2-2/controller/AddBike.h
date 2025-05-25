@@ -12,4 +12,4 @@ public:
     AddBike(vector<Bike>* bikes);
 
     Bike addNewBike(const string& bikeID, const string& bikeName);
-}
+};

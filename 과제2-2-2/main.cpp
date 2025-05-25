@@ -43,8 +43,12 @@ ifstream in_fp;
 vector<Account> accounts;  // 회원 목록
 Session session;           // 로그인 세션
 SystemController systemController;  // 전체 종료
+vector<Bike> bikes;
 
 int main() {
+    // 관리자 계정은 미리 추가해놓기!!
+    accounts.push_back(Account("admin", "admin", "00000000000"));
+    
     // 파일 열기
     in_fp.open(INPUT_FILE_NAME);
     out_fp.open(OUTPUT_FILE_NAME);
@@ -66,9 +70,9 @@ void doTask() {
     AddAccount addAccount(&accounts);
     Login login(&accounts, &session);
     Logout logout(&session);
-    AddBike addBike(&accounts, &session);
-    Rent rent(&accounts, &session);
-    RentRecord rentRecord(&accounts, &session);
+    AddBike addBike(&bikes);
+    Rent rent(&bikes, &session);
+    RentRecord rentRecord(&session);
     Close close(&systemController);
 
     // UI 클래스 객체

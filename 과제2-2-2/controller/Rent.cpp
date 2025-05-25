@@ -16,13 +16,13 @@ Bike* Rent::findBike(const string& bikeID) {
 }
 
 bool Rent::requestRent(const string& bikeID) {
-    Bike* bike = findBike(bikeID);
-    if (bike == nullptr) return false;
-
     Account* currentUser = session->getCurrentUser();
     if (currentUser == nullptr) return false;
 
-    currentUser->getRentList().addRecord(*bike); // 대여 리스트에 추가
+    Bike* bike = findBike(bikeID);
+    if (bike == nullptr) return false;
+
+    currentUser->getRentList().addRecord(*bike); // 리스트에 추가
 
     return true;
 }

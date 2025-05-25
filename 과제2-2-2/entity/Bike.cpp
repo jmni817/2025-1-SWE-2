@@ -14,6 +14,6 @@ string Bike::getBikeName() const {
     return bikeName;
 }
 
-string getBikeDetails() const {
-    return bikeID + " " + productName;
+string Bike::getBikeDetails() const {
+    return "ID: " + bikeID + ", Name: " + bikeName;
 }

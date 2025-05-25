@@ -21,7 +21,7 @@ public:
     string getPhone() const;
 
     // 로그인 검증용
-    bool verifyAccount(string& userID, string& password);
+    bool verifyAccount(const string& userID, const string& password);
 
     // rentlist접근자~!!
     RentList& getRentList();

@@ -10,4 +10,5 @@ void LoginUI::input(const string& userID, const string& password, ofstream& fout
         fout << "2.1. 로그인" << endl;
         fout << "> " << userID << " " << password << endl;
     }
+    fout << endl;
 }

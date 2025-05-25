@@ -6,5 +6,5 @@ void RentList::addRecord(const Bike& bike) {
 }
 
 vector<Bike> RentList::getRentRecord() const {
-    return rentRecords;
+    return bikeRecords;
 }

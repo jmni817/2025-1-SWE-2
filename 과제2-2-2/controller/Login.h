@@ -14,5 +14,5 @@ private:
 public:
     Login(vector<Account>* accounts, Session* session);
 
-    bool loginRequest(string& userID, string& password);
+    bool loginRequest(const string& userID, const string& password);
 };

@@ -7,8 +7,7 @@ RentRecord::RentRecord(Session* session) {
 }
 
 vector<Bike> RentRecord::requestRentList() {
-    Account* currentUser = session->getCurrentUser();
+    Account* account = session->getCurrentUser(); // 현재 로그인된 사용자 ID 가져오기
     
-    RentList& rentList = currentUser->getRentList();
-    return rentList.getRentRecord();
+    return account->getRentList().getRentRecord();
 }

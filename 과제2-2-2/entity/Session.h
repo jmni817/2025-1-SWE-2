@@ -1,6 +1,8 @@
-// 세션 헤더파일
+// Session.h
 #pragma once
 #include "Account.h"
+
+class Account;
 
 class Session {
 private:
