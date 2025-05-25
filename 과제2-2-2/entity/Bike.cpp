@@ -13,3 +13,7 @@ string Bike::getBikeID() const {
 string Bike::getBikeName() const {
     return bikeName;
 }
+
+string getBikeDetails() const {
+    return bikeID + " " + productName;
+}

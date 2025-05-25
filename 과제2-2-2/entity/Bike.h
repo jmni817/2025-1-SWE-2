@@ -13,5 +13,5 @@ public:
 
     string getBikeID() const;
     string getBikeName() const;
-    string getBikeDetails(bikeID);
+    string getBikeDetails() const;
 };

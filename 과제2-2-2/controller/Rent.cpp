@@ -8,7 +8,9 @@ Rent::Rent(vector<Bike>* bikes, Session* session) {
 
 Bike* Rent::findBike(const string& bikeID) {
     for (auto& bike : *bikes) {
-        return &bike;
+        if (bike.getBikeID() == bikeID) {  // ID일치하는거찾기
+            return &bike;
+        }
     }
     return nullptr;
 }
