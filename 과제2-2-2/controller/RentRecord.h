@@ -1,4 +1,5 @@
 // RentRecord.h
+#pragma once
 #include <vector>
 #include "Bike.h"
 #include "Session.h"

@@ -1,4 +1,5 @@
 //Login.h
+#pragma once
 #include "Account.h"
 #include "Session.h"
 #include <vector>

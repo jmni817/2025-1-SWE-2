@@ -1,4 +1,5 @@
 // Account.h
+#pragma once
 #include <string>
 #include "RentList.h"
 using namespace std;

@@ -1,4 +1,5 @@
 //AddAccount.h
+#pragma once
 #include "Account.h"
 #include <vector>
 using namespace std;

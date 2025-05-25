@@ -1,4 +1,5 @@
 //LoginUI.h
+#pragma once
 #include "Login.h"
 #include <fstream>
 #include <string>

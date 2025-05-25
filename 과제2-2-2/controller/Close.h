@@ -1,3 +1,4 @@
+#pragma once
 #include "SystemController.h"
 
 class Close {

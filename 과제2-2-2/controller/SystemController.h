@@ -1,4 +1,5 @@
 // SystemController.h
+#pragma once
 #include <iostream>
 
 class SystemController {

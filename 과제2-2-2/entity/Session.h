@@ -1,4 +1,5 @@
 // 세션 헤더파일
+#pragma once
 #include "Account.h"
 
 class Session {

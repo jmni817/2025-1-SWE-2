@@ -1,3 +1,4 @@
+#pragma once
 #include <fstream>
 #include "RentRecord.h"
 using namespace std;

@@ -1,4 +1,5 @@
 //LogoutUI.h
+#pragma once
 #include <fstream>
 #include "Logout.h"
 using namespace std;

@@ -1,4 +1,5 @@
 // AddBike.h
+#pragma once
 #include "Bike.h"
 #include <vector>
 using namespace std;

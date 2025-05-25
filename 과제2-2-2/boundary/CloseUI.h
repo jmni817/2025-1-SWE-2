@@ -1,3 +1,4 @@
+#pragma once
 #include <fstream>
 #include "Close.h"
 using namespace std;
