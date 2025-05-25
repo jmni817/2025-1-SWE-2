@@ -1,12 +1,13 @@
-#include "Login.h"
+//LogoutUI.h
 #include <fstream>
+#include "Logout.h"
 using namespace std;
 
-class LoginUI {
+class LogoutUI {
 private:
-    Login* loginControl;
+    Logout* logoutControl;
 
 public:
-    LoginUI(Login* control);
-    void input(const string& userID, const string& password, ofstream& fout);
+    LogoutUI(Logout* control);
+    void input(ofstream& fout);
 };

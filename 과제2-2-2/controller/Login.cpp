@@ -1,3 +1,4 @@
+//Login.cpp
 #include "Login.h"
 
 Login::Login(vector<Account>* accounts, Session* session) {
@@ -13,4 +14,5 @@ bool Login::loginRequest(string& userID, string& password) {
             return true;
         }
     }
+    return false;
 }

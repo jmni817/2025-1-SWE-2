@@ -1,3 +1,4 @@
+// 세션 cpp
 #include "Session.h"
 
 Session::Session() : currentUserID(nullptr) {}

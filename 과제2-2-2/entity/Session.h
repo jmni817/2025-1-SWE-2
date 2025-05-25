@@ -1,3 +1,4 @@
+// 세션 헤더파일
 #include "Account.h"
 
 class Session {

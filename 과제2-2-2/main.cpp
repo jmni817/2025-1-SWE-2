@@ -1,3 +1,4 @@
+// 메인 cpp
 // input파일 처리하기
 #include <iostream>
 #include <fstream>
@@ -10,6 +11,8 @@ using namespace std;
 #include "Account.h"
 #include "LoginUI.h"
 #include "Login.h"
+#include "LogoutUI.h"
+#include "Logout.h"
 #include "Session.h"
 
 #define INPUT_FILE_NAME "input.txt"
@@ -23,6 +26,8 @@ vector<Account> accounts;  // 회원목록
 Session session;           // 로그인 세션
 Login login(&accounts, &session);
 LoginUI loginUI(&login);
+Logout logout;
+LogoutUI logoutUI(&logout);
 
 
 void doTask();
