@@ -22,3 +22,8 @@ string Account::getPhone() const {
 bool Account::verifyAccount(string& id, string& pw) {
     return (userID == id && password == pw);
 }
+
+// 렌트리스트 객체 불러오기
+RentList& Account::getRentList() {
+    return rentList;
+}

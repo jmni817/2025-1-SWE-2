@@ -3,6 +3,7 @@
 #include "Logout.h"
 using namespace std;
 
+class Logout;
 class LogoutUI {
 private:
     Logout* logoutControl;

@@ -166,7 +166,7 @@
 
 ### Entity
 
-- `Account` : userID, password, phoneNumber / verifyAccount(); Account();
+- `Account` : userID, password, phoneNumber / verifyAccount(); Account(); getRentList();
 - `Bike` : bikeID, bikeName / Bike(); getBikeDetails();
 - `RentList` : bikeRecords / addRecord(); getRentRecord();
 - `Session` : currentUserID / saveCurrentUser(); clearSession(); getCurrentUser();
@@ -198,5 +198,5 @@
   
 ![alt text](image.png)  
   
-  
+
 ## Designed Class Diagram 정리
