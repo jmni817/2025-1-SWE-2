@@ -11235,8 +11235,7 @@
 								"$ref": "AAAAAAGW6N+PpDdluQU="
 							},
 							"name": "currentUser",
-							"visibility": "private",
-							"type": ""
+							"visibility": "private"
 						}
 					],
 					"operations": [

@@ -12,7 +12,7 @@ void RentRecordUI::input(ofstream& fout) {
 
     fout << "5.1. 자전거 대여 리스트" << endl;
     for (const Bike& bike : records) {
-        fout << "> " << bike.getBikeID() << " " << bike.getBikeName() << endl;
+        fout << "> " << bike.getBikeDetails() << endl;
     }
     fout << endl;
 }

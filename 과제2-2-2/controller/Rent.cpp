@@ -9,7 +9,7 @@ Rent::Rent(vector<Bike>* bikes, Session* session) {
 Bike* Rent::findBike(const string& bikeID) {
     for (auto& bike : *bikes) {
         if (bike.getBikeID() == bikeID) {  // ID일치하는거찾기
-            return &bike;
+            return &bike; // 찾으면 그 자전거 주소 반환
         }
     }
     return nullptr;
@@ -17,11 +17,8 @@ Bike* Rent::findBike(const string& bikeID) {
 
 bool Rent::requestRent(const string& bikeID) {
     Account* currentUser = session->getCurrentUser();
-    if (currentUser == nullptr) return false;
-
     Bike* bike = findBike(bikeID);
-    if (bike == nullptr) return false;
-
+   
     currentUser->getRentList().addRecord(*bike); // 리스트에 추가
 
     return true;
