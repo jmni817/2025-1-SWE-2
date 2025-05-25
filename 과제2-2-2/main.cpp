@@ -5,7 +5,6 @@
 #include <string>
 using namespace std;
 
-// 프로젝트 관련 헤더
 #include "boundary/AddAccountUI.h"
 #include "controller/AddAccount.h"
 #include "entity/Account.h"
@@ -48,7 +47,7 @@ vector<Bike> bikes;
 int main() {
     // 관리자 계정은 미리 추가해놓기!!
     accounts.push_back(Account("admin", "admin", "00000000000"));
-    
+
     // 파일 열기
     in_fp.open(INPUT_FILE_NAME);
     out_fp.open(OUTPUT_FILE_NAME);

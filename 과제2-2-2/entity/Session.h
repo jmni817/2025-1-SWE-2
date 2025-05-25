@@ -6,7 +6,7 @@ class Account;
 
 class Session {
 private:
-    Account* currentUserID;
+    Account* currentUser;
 
 public:
     Session();
