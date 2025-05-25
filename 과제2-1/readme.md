@@ -104,39 +104,34 @@
 
 ---
 
-## 스테레오타입별 클래스 정리
+## Analysis Class Diagram 정리
 
 > `newAcc: Account` 등은 단순 객체이므로 클래스 다이어그램에는 포함하지 않음.
 
 ###  Boundary
-- `AddAccountUI`  
-- `LoginUI`  
-- `LogoutUI`  
-- `AddBikeUI`  
-- `RentUI`  
-- `RentRecordUI`  
-- `CloseUI`
+- `AddAccountUI`  : input();  
+- `LoginUI`  : input();  
+- `LogoutUI`  : input();  
+- `AddBikeUI`  : input();  
+- `RentUI`  : input();    
+- `RentRecordUI`  : input();    
+- `CloseUI`  : input();  
 
 ###  Control
-- `AddAccount`  
-- `Login`  
-- `Logout`  
-- `AddBike`  
-- `Rent`  
-- `RentRecord`  
-- `Close`
-- `System`  
+- `AddAccount`  : addNewAccount();
+- `Login`  : loginRequest();
+- `Logout`  : logoutRequest();
+- `AddBike`  : addNewBike();
+- `Rent`  : requestRent(); findBike();  
+- `RentRecord`  : requestRentList();  
+- `Close`  : closeRequest();  
+- `System`  : systemClose();  
   
 ###  Entity
-- `Account`  
-  - 회원 정보를 담는 엔티티  
-  - 회원가입 및 로그인 시 사용됨  
-- `Bike`  
-  - 자전거 ID 및 제품명 관리  
-- `RentList`  
-  - 회원별 대여 기록을 보관 (1인 1RentList)  
-- `Session`  
-  - 현재 로그인된 회원 정보 유지  
+- `Account`  : userID, password, phoneNumber / verifyAccount(); Account();  
+- `Bike`  : bikeID, bikeName / Bike(); getBikeDetails();  
+- `RentList`  : bikeRecords / addRecord(); getRentRecord();  
+- `Session`  : currentUserID / saveCurrentUser(); clearSession(); getCurrentUser();    
   
 ---
   
@@ -158,3 +153,5 @@
 ### Composition  
 - 전체 객체가 사라지면 부분 객체도 함께 소멸    
     - Account가 사라지면 RentList도 소멸  
+
+## Designed Class Diagram 정리
