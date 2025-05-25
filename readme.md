@@ -195,5 +195,8 @@
 
 - 전체 객체가 사라지면 부분 객체도 함께 소멸
   - Account가 사라지면 RentList도 소멸
-
+  
+![alt text](image.png)  
+  
+  
 ## Designed Class Diagram 정리

@@ -7,6 +7,7 @@ using namespace std;
 
 // AddAccount 객체에 접근해서 실제 회원가입 처리 기능을 수행할 수 있도록 의존성을 주입
 // 회원가입 절차의 로직을 직접 몰라도 되게 함
+// https://dmdwn3979.tistory.com/21#%EC%-D%--%EC%A-%B-%EC%--%B-%--%EC%A-%BC%EC%-E%---Dependency%--Injection-%--in%--Javascript
 AddAccountUI::AddAccountUI(AddAccount* control) {
     this->addAccountControl = control;
 }
