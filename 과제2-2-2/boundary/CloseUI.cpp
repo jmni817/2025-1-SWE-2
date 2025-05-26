@@ -8,6 +8,6 @@ CloseUI::CloseUI(Close* control) {
 void CloseUI::input(ofstream& fout) {
     fout << "6.1 프로그램 종료\n";
     fout << endl;
-    
-    close->closeRequest(); // 컨트롤클래스 호출
+
+    closeControl->closeRequest(); // 컨트롤클래스 호출
 }

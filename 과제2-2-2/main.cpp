@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 using namespace std;
-
+/*
 #include "boundary/AddAccountUI.h"
 #include "controller/AddAccount.h"
 #include "entity/Account.h"
@@ -24,7 +24,7 @@ using namespace std;
 #include "boundary/CloseUI.h"
 #include "controller/Close.h"
 #include "controller/SystemController.h"
-/*
+*/
 #include "AddAccountUI.h"
 #include "AddAccount.h"
 #include "Account.h"
@@ -44,7 +44,7 @@ using namespace std;
 #include "CloseUI.h"
 #include "Close.h"
 #include "SystemController.h"
-*/
+
 
 // 상수 선언
 #define MAX_STRING 32
