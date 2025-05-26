@@ -1,12 +1,15 @@
 #pragma once
 #include <fstream>
-#include "Close.h"
+#include <string>
 using namespace std;
+
+class Close;
 
 class CloseUI {
 private:
     Close* close;
+
 public:
-    CloseUI(Close* close) : close(close) {}
-    void input(ofstream& out);
+    CloseUI(Close* close);
+    void input(ofstream& fout);
 };

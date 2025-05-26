@@ -11,10 +11,11 @@ private:
     AddAccount* addAccountControl;  // Control 클래스에 대한 포인터
 
 public:
-    // 생성자: Control 객체 주입
+    // 생성자에서 매개변수로 컨트롤클래스의 객체 받아옴
     AddAccountUI(AddAccount* control);
 
-    // 회원가입 입력 처리 함수: 입력을 받아 Control을 호출하고, 결과 출력
+    // 입력처리
+    // 컨트롤클래스 호출, 결과 출력
     void input(const string& userID, const string& password, const string& phoneNumber, ofstream& fout);
 };
 

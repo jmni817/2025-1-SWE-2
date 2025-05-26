@@ -1,7 +1,9 @@
 #pragma once
 #include <fstream>
-#include "RentRecord.h"
+#include <string>
 using namespace std;
+
+class RentRecord;
 
 class RentRecordUI {
 private:
@@ -9,5 +11,6 @@ private:
 
 public:
     RentRecordUI(RentRecord* control);
+    
     void input(ofstream& fout);
 };

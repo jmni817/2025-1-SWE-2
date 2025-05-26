@@ -1,5 +1,6 @@
 // LoginUI.cpp
 #include "LoginUI.h"
+#include "Login.h"
 
 LoginUI::LoginUI(Login* control) {
     this->loginControl = control;

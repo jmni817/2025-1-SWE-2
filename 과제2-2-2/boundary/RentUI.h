@@ -1,10 +1,10 @@
 #pragma once
-#include <string>
 #include <fstream>
-#include "Rent.h"
+#include <string>
 using namespace std;
 
 class Rent;
+
 class RentUI {
 private:
     Rent* rentControl;

@@ -1,6 +1,13 @@
 #include "CloseUI.h"
+#include "Close.h"
 
-void CloseUI::input(ofstream& out) {
-    out << "6.1 프로그램 종료\n";
-    close->closeRequest(); // Control 계층 호출
+CloseUI::CloseUI(Close* control) {
+    this->closeControl = control;
+}
+
+void CloseUI::input(ofstream& fout) {
+    fout << "6.1 프로그램 종료\n";
+    fout << endl;
+    
+    close->closeRequest(); // 컨트롤클래스 호출
 }

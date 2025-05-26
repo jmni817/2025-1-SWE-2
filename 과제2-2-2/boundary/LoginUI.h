@@ -1,11 +1,11 @@
 //LoginUI.h
 #pragma once
-#include "Login.h"
 #include <fstream>
 #include <string>
 using namespace std;
 
 class Login;
+
 class LoginUI {
 private:
     Login* loginControl;

@@ -1,5 +1,6 @@
 //AddAccount.cpp
 #include "AddAccount.h"
+#include "Account.h"
 
 AddAccount::AddAccount(vector<Account>* accounts) {
     this->accounts = accounts;
