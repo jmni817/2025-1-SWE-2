@@ -1,6 +1,7 @@
 // Bike.cpp
 #include "Bike.h"
 
+// 생성자에서 값 넣기 필요성
 Bike::Bike(const string& bikeID, const string& bikeName) {
     this->bikeID = bikeID;
     this->bikeName = bikeName;

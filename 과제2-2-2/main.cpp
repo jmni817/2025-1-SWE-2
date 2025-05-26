@@ -39,10 +39,10 @@ ofstream out_fp;
 ifstream in_fp;
 
 // 전역 객체
-vector<Account> accounts;  // 회원 목록
+vector<Account> accounts;  // 회원 객체를 리스트화하기위해 벡터 사용
+vector<Bike> bikes;         // 자전거 객체를 리스트화하기위해 벡터 사용
 Session session;           // 로그인 세션
 SystemController systemController;  // 전체 종료
-vector<Bike> bikes;
 
 int main() {
     // 관리자 계정은 미리 추가해놓기!!

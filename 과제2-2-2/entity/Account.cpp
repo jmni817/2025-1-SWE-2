@@ -1,6 +1,7 @@
 //Account.cpp
 #include "Account.h"
 
+// 생성자에서 값 넣어줘야됨~
 Account::Account(string userID, string password, string phoneNumber) {
     this->userID = userID;
     this->password = password;
@@ -23,7 +24,7 @@ bool Account::verifyAccount(const string& id, const string& pw) {
     return (userID == id && password == pw);
 }
 
-// 렌트리스트 객체 불러오기
+// dbwjdm렌트리스트 객체 불러오기
 RentList& Account::getRentList() {
     return rentList;
 }

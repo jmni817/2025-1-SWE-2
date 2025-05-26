@@ -195,13 +195,12 @@
 
 - 전체 객체가 사라지면 부분 객체도 함께 소멸
   - Account가 사라지면 RentList도 소멸
-  
-![alt text](image.png)  
-  
 
-## Designed Class Diagram로 변환하기  
-- 생성자 함수도 operation에 추가하기 (but, 리턴타입 없이 표현)  
-- 의존(참조해오는) 속성을  attribute에 추가하기
-- 오퍼레이션(파라미터이름: 타입) 기재하기  
-- 속성: 반환타입 기재하기  
- 
+![alt text](image.png)
+
+## Designed Class Diagram로 변환하기
+
+- 생성자 함수도 operation에 추가하기 (but, 리턴타입 없이 표현)
+- 의존(참조해오는) 속성을 attribute에 추가하기
+- 오퍼레이션(파라미터이름: 타입) 기재하기
+- 속성: 반환타입 기재하기
