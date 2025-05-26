@@ -11,5 +11,5 @@ private:
 
 public:
     Logout(Session* session);
-    void logoutRequest();
+    string logoutRequest();
 };
