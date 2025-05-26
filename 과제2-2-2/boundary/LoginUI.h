@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-class Login;
+#include "Login.h"
 
 class LoginUI {
 private:

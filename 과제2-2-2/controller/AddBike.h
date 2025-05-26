@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 
-class Bike;
+#include "Bike.h"
 
 class AddBike {
 private:

@@ -3,11 +3,11 @@
 #include <string>
 using namespace std;
 
-class Close;
+#include "Close.h"
 
 class CloseUI {
 private:
-    Close* close;
+    Close* closeControl;
 
 public:
     CloseUI(Close* close);

@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 
-class Session;
+#include "Session.h"
 
 class Logout {
 private:

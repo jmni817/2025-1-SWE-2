@@ -4,7 +4,7 @@
 #include <fstream>
 using namespace std;
 
-class AddAccount;  // AddAccount 클래스 사용을 위한 선언
+#include "AddAccount.h"
 
 class AddAccountUI {
 private:

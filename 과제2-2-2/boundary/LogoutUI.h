@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-class Logout;
+#include "Logout.h"
 
 class LogoutUI {
 private:
@@ -12,6 +12,6 @@ private:
 
 public:
     LogoutUI(Logout* control);
-    
+
     void input(ofstream& fout);
 };

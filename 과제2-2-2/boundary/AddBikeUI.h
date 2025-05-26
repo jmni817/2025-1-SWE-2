@@ -4,7 +4,7 @@
 #include <fstream>
 using namespace std;
 
-class AddBike;
+#include "AddBike.h"
 
 class AddBikeUI {
 private:

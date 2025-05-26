@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 
-class Account;
+#include "Account.h"
 
 class AddAccount {
 private:

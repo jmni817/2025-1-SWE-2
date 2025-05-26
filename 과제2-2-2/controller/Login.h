@@ -5,8 +5,8 @@
 #include <vector>
 using namespace std;
 
-class Account;
-class Session;
+#include "Account.h"
+#include "Session.h"
 
 class Login {
 private:

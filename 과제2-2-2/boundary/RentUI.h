@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-class Rent;
+#include "Rent.h"
 
 class RentUI {
 private:

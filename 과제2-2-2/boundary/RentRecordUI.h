@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-class RentRecord;
+#include "RentRecord.h"
 
 class RentRecordUI {
 private:
@@ -11,6 +11,6 @@ private:
 
 public:
     RentRecordUI(RentRecord* control);
-    
+
     void input(ofstream& fout);
 };

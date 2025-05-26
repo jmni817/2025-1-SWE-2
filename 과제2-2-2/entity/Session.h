@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 
-class Account;
+#include "Account.h"
 
 class Session {
 private:
@@ -13,7 +13,7 @@ private:
 
 public:
     Session();
-    
+
     void saveCurrentUser(Account* account);
     Account* getCurrentUser() const;
     void clearSession();    // 로그아웃 시

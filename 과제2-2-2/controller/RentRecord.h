@@ -5,8 +5,8 @@
 #include <vector>
 using namespace std;
 
-class Bike;
-class Session;
+#include "Bike.h"
+#include "Session.h"
 
 class RentRecord {
 private:
