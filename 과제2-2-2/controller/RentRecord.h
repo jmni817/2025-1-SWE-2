@@ -1,9 +1,12 @@
 // RentRecord.h
 #pragma once
+#include <fstream>
+#include <string>
 #include <vector>
-#include "Bike.h"
-#include "Session.h"
-#include "RentList.h"
+using namespace std;
+
+class Bike;
+class Session;
 
 class RentRecord {
 private:

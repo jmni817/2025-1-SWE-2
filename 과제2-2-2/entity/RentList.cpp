@@ -7,4 +7,5 @@ void RentList::addRecord(const Bike& bike) {
 
 vector<Bike> RentList::getRentRecord() const {
     return bikeRecords;
+    // 저장된 대여 내역을 리턴
 }

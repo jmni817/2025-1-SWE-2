@@ -1,10 +1,12 @@
+// Rent.h
 #pragma once
-#include <vector>
+#include <fstream>
 #include <string>
-#include "Bike.h"
-#include "Session.h"
-#include "Account.h"
+#include <vector>
 using namespace std;
+
+class Bike;
+class Session;
 
 class Rent {
 private:

@@ -5,9 +5,14 @@
 #include <vector>
 using namespace std;
 
+class Account;
+
 class AddAccount {
 private:
-    vector<Account>* accounts;  // 외부 vector에 접근
+    // account 객체들을 리스트처럼 구성하고 관리하기 위해서 벡터 씀
+    // vector<Account> - 객체들을 담는 동적 배열
+    // * accounts - 객체를 담는 벡터에 대한 포인터
+    vector<Account>* accounts; 
 
 public:
     AddAccount(vector<Account>* accounts);

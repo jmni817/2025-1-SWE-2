@@ -1,15 +1,18 @@
 // RentList.h
 #pragma once
-#include <vector>
+#include <fstream>
 #include <string>
-#include "Bike.h"
+#include <vector>
 using namespace std;
+
+class Bike;
 
 class RentList {
 private:
-    vector<Bike> bikeRecords;              // 대여 기록
+    vector<Bike> bikeRecords;   // 대여기록
 
 public:
     void addRecord(const Bike& bike);
+    
     vector<Bike> getRentRecord() const; 
 };

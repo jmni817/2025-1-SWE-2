@@ -1,10 +1,12 @@
 //Login.h
 #pragma once
-#include "Account.h"
-#include "Session.h"
-#include <vector>
+#include <fstream>
 #include <string>
+#include <vector>
 using namespace std;
+
+class Account;
+class Session;
 
 class Login {
 private:

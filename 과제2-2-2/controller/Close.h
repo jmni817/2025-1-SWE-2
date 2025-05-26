@@ -1,11 +1,17 @@
+// Close.h
 #pragma once
-#include "SystemController.h"
+#include <fstream>
+#include <string>
+#include <vector>
+using namespace std;
+
+class SystemController;
 
 class Close {
 private:
     SystemController* systemController;
     
 public:
-    Close(SystemController* systemController) : systemController(systemController) {}
+    Close(SystemController* systemController);
     void closeRequest();
 };

@@ -1,6 +1,9 @@
 // Session.h
 #pragma once
-#include "Account.h"
+#include <fstream>
+#include <string>
+#include <vector>
+using namespace std;
 
 class Account;
 
@@ -12,5 +15,5 @@ public:
     Session();
     void saveCurrentUser(Account* account);
     Account* getCurrentUser() const;
-    void clearSession();
+    void clearSession();    // 로그아웃 시
 };

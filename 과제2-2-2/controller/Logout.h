@@ -1,6 +1,8 @@
 //Logout.h
 #pragma once
+#include <fstream>
 #include <string>
+#include <vector>
 using namespace std;
 
 class Session;
@@ -11,5 +13,6 @@ private:
 
 public:
     Logout(Session* session);
+
     string logoutRequest();
 };

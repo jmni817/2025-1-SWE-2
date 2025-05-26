@@ -1,15 +1,19 @@
 // Account.h
 #pragma once
+#include <fstream>
 #include <string>
-#include "RentList.h"
+#include <vector>
 using namespace std;
+
+class RentList;
 
 class Account {
 private:
     string userID;
     string password;
     string phoneNumber;
-    // Account가 RentList를 소유하는 관계임
+    // Account가 RentList를 소유하는 관계임!!
+    // 회원은 각각의 렌트리스트를 가지고있다
     RentList rentList;
 
 public:
