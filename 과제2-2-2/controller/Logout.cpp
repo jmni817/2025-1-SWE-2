@@ -4,8 +4,7 @@
 
 Logout::Logout(Session* session) : session(session) {}
 
-string Logout::logoutRequest() {
+void Logout::logoutRequest() {
     string id = session->getCurrentUser()->getId();
     session->clearSession();
-    return id;
 }
