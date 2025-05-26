@@ -3,12 +3,15 @@
 #include "Account.h"
 #include "Session.h"
 
+// 세션 객체 포인터 받기
 RentRecord::RentRecord(Session* session) {
     this->session = session;
 }
 
 vector<Bike> RentRecord::requestRentList() {
-    Account* account = session->getCurrentUser();   // 세션에서 현재 로그인된 사용자 ID 가져오기
+    // 세션에서 현재 로그인된 사용자 ID 가져오기
+    Account* account = session->getCurrentUser();   
     
-    return account->getRentList().getRentRecord();  // 어카운트에서 본인 렌트리스트 가져오기
+    // 어카운트에서 본인 렌트리스트 가져오기
+    return account->getRentList().getRentRecord();  
 }

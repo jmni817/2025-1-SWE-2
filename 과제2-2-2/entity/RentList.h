@@ -12,7 +12,9 @@ private:
     vector<Bike> bikeRecords;   // 대여기록
 
 public:
-    void addRecord(const Bike& bike);
-
+    // 자전거 대여 기록 추가 함수
+    void addRecord(const Bike& bike); 
+    
+    // 자전거 대여 기록 전체 반환 함수
     vector<Bike> getRentRecord() const; 
 };

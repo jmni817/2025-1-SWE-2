@@ -15,7 +15,8 @@ private:
     vector<Bike>* bikes;
 
 public:
-    AddBike(vector<Bike>* bikes);
+    AddBike(vector<Bike>* bikes);   // 자전거목록 벡터 생성
 
+    // 자전거아이디, 이름으로 자전거 등록
     Bike addNewBike(const string& bikeID, const string& bikeName);
 };

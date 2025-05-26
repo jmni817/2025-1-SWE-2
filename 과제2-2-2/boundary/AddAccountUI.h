@@ -8,7 +8,7 @@ using namespace std;
 
 class AddAccountUI {
 private:
-    AddAccount* addAccountControl;  // Control 클래스에 대한 포인터
+    AddAccount* addAccountControl;  // 애드어카운트 클래스에 대한 포인터
 
 public:
     // 생성자에서 매개변수로 컨트롤클래스의 객체 받아옴

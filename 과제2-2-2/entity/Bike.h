@@ -12,9 +12,9 @@ private:
 
 public:
     Bike() = default;
-    Bike(const string& bikeID, const string& bikeName);
+    Bike(const string& bikeID, const string& bikeName); // 생성자
 
-    string getBikeID() const;
-    string getBikeName() const;
-    string getBikeDetails() const;
+    string getBikeID() const;       // 자전거 아이디 반환 함수
+    string getBikeName() const;     // 자전거 제품명 반환 함수
+    string getBikeDetails() const;  // 자전거 정보 반환 함수
 };

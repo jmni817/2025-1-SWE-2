@@ -8,10 +8,11 @@ using namespace std;
 
 class LogoutUI {
 private:
-    Logout* logoutControl;
+    Logout* logoutControl;  // 로그아웃 클래스와 연결
 
 public:
-    LogoutUI(Logout* control);
+    LogoutUI(Logout* control);  // 생성자
 
+    // 입력 처리, 출력
     void input(ofstream& fout);
 };

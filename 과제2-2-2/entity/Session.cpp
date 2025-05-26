@@ -7,14 +7,17 @@ Session::Session() {
     this->currentUser = nullptr;
 }
 
+// 현재 사용자 정보를 저장
 void Session::saveCurrentUser(Account* account) {
     currentUser = account;
 }
 
+// 현재 사용자 정보를 반환
 Account* Session::getCurrentUser() const {
     return currentUser;
 }
 
+// 사용자 정보를 제거
 void Session::clearSession() {
     currentUser = nullptr;
 }

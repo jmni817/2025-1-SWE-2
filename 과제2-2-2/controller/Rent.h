@@ -10,12 +10,14 @@ using namespace std;
 
 class Rent {
 private:
-    vector<Bike>* bikes;
-    Session* session;
+    vector<Bike>* bikes;    // 자전거 목록에 의존
+    Session* session;       // 세션에 의존
 
 public:
-    Rent(vector<Bike>* bikes, Session* session);
+    Rent(vector<Bike>* bikes, Session* session);    //생성자
 
-    bool requestRent(const string& bikeID);
+    // 아이디로 자전거 정보 찾는 함수
     Bike* findBike(const string& bikeID);
+    // 대여 요청 처리하는 함수
+    bool requestRent(const string& bikeID);
 };

@@ -18,13 +18,13 @@ private:
 
 public:
     Account() = default;
-    Account(string userID, string password, string phoneNumber);
+    Account(string userID, string password, string phoneNumber);    // 생성자
 
-    string getId() const;
-    string getPw() const;
-    string getPhone() const;
+    string getId() const;       // 아이디 반환 함수
+    string getPw() const;       // 비밀번호 반환 함수
+    string getPhone() const;    // 전화번호 반환 함수
 
-    // 로그인 검증용
+    // 로그인 검증용 함수
     bool verifyAccount(const string& userID, const string& password);
 
     // rentlist접근자~!!

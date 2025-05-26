@@ -112,7 +112,10 @@ void doTask() {
                 if (menu_level_2 == 1) {
                     // 회원가입
                     string userID, password, phoneNumber;
+
+                    // 입력 파일에서 아이디, 비밀번호, 전화번호 받음
                     in_fp >> userID >> password >> phoneNumber;
+                    // UI로 넘기기
                     addAccountUI.input(userID, password, phoneNumber, out_fp);
                 }
                 break;
@@ -121,11 +124,15 @@ void doTask() {
                 if (menu_level_2 == 1) {
                     // 로그인
                     string userID, password;
+
+                    // 입력 파일에서 아이디, 비밀번호 받음
                     in_fp >> userID >> password;
+                    // UI 로 넘기기
                     loginUI.input(userID, password, out_fp);
                 }
                 else if (menu_level_2 == 2) {
                     // 로그아웃
+                    // UI로 넘기기
                     logoutUI.input(out_fp);
                 }
                 break;
@@ -134,7 +141,10 @@ void doTask() {
                 if (menu_level_2 == 1) {
                     // 자전거 등록
                     string bikeID, bikeName;
+
+                    // 입력 파일에서 자전거아이디, 자전거제품명 받음
                     in_fp >> bikeID >> bikeName;
+                    // UI로 넘기기
                     addBikeUI.input(bikeID, bikeName, out_fp);
                 }
                 break;
@@ -143,7 +153,10 @@ void doTask() {
                 if (menu_level_2 == 1) {
                     // 자전거 대여
                     string bikeID;
+
+                    // 입력 파일에서 자전거아이디 받음
                     in_fp >> bikeID;
+                    // UI로 넘기기
                     rentUI.input(bikeID, out_fp);
                 }
                 break;
@@ -151,6 +164,7 @@ void doTask() {
             case 5:
                 if (menu_level_2 == 1) {
                     // 자전거 대여 리스트 조회
+                    // UI로 넘겨서 처리
                     rentRecordUI.input(out_fp);
                 }
                 break;
@@ -158,7 +172,9 @@ void doTask() {
             case 6:
                 if (menu_level_2 == 1) {
                     // 프로그램 종료
+                    // UI로 넘기기
                     closeUI.input(out_fp);
+                    // 프로그램 종료하기
                     is_program_exit = 1;
                 }
                 break;

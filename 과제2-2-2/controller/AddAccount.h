@@ -15,7 +15,8 @@ private:
     vector<Account>* accounts; 
 
 public:
-    AddAccount(vector<Account>* accounts);
+    AddAccount(vector<Account>* accounts);  // 계정 벡터 생성
 
+    // 회원가입 구현하는 함수
     Account addNewAccount(const string& userID, const string& password, const string& phoneNumber);
 };

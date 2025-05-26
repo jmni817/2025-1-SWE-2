@@ -18,7 +18,9 @@ void AddAccountUI::input(const string& userID, const string& password, const str
     // addAccountControl
     Account newAccount = addAccountControl->addNewAccount(userID, password, phoneNumber);
     
+    // 출력 메시지
     fout << "1.1. 회원가입" << endl;
+    // 아이디, 비밀번호 휴대폰번호 출력
     fout << "> " << newAccount.getId() << " " << newAccount.getPw() << " " << newAccount.getPhone() << endl;
     fout << endl;
 }
