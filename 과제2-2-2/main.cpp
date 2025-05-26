@@ -24,6 +24,27 @@ using namespace std;
 #include "boundary/CloseUI.h"
 #include "controller/Close.h"
 #include "controller/SystemController.h"
+/*
+#include "AddAccountUI.h"
+#include "AddAccount.h"
+#include "Account.h"
+#include "LoginUI.h"
+#include "Login.h"
+#include "LogoutUI.h"
+#include "Logout.h"
+#include "Session.h"
+#include "AddBikeUI.h"
+#include "AddBike.h"
+#include "Bike.h"
+#include "RentUI.h"
+#include "Rent.h"
+#include "RentList.h"
+#include "RentRecordUI.h"
+#include "RentRecord.h"
+#include "CloseUI.h"
+#include "Close.h"
+#include "SystemController.h"
+*/
 
 // 상수 선언
 #define MAX_STRING 32
