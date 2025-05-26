@@ -2,8 +2,6 @@
 #include "AddAccountUI.h"
 #include "AddAccount.h"
 #include "Account.h"
-#include <fstream>
-using namespace std;
 
 // AddAccount 객체에 접근해서 실제 회원가입 처리 기능을 수행할 수 있도록 의존성을 주입
 // 객체를 직접 생성하지 않고 외부에서 넣어줌 (결합도 내려감)

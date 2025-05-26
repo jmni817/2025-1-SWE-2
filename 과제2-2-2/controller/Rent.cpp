@@ -21,6 +21,7 @@ bool Rent::requestRent(const string& bikeID) {
     Account* currentUser = session->getCurrentUser();
     Bike* bike = findBike(bikeID);  // 아이디 일치하는 주소의 bike 값들을 가리키는 포인터
    
+    // addRecord함수에서 push_back()함수로 추가되는 구조
     currentUser->getRentList().addRecord(*bike);    // 현재 유저의 렌트리스트에 자전거 정보 추가
 
     return true;
